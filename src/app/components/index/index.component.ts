@@ -10,24 +10,18 @@ import {ClienteService} from "../service/cliente.service";
 })
 export class IndexComponent implements OnInit {
 
-  cliente: Cliente[];
+  clientes: Cliente[];
 
   constructor(private router: Router, private clienteService: ClienteService) { }
 
   ngOnInit() {
     this.clienteService.getClientes()
       .subscribe( data => {
-        this.cliente = data;
+        this.clientes = data;
       });
   }
 
-  deleteUser(cliente: Cliente): void {
-  };
-
-  editUser(cliente: Cliente): void {
-  };
-
-  addUser(): void {
+  addCliente(): void {
     this.router.navigate(['add-cliente']);
   };
 
