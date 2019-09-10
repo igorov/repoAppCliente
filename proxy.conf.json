@@ -1,0 +1,6 @@
+{
+    "/api": {
+      "target": "http://rest-api-1-env.eaggrsx3b6.us-east-1.elasticbeanstalk.com/cliente",
+      "secure": false
+    }
+  }

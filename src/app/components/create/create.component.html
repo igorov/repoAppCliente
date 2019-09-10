@@ -1,0 +1,23 @@
+<div class="col-md-6">
+    <h2 class="text-center">Agregar cliente</h2>
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+      
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input formControlName="nombre" placeholder="Nombre" name="nombre" class="form-control" id="nombre">
+          </div>
+
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input formControlName="apellido" placeholder="Apellido" name="apellido" class="form-control" id="apellido">
+          </div>
+  
+      <div class="form-group">
+        <label for="edad">Edad:</label>
+        <input formControlName="edad" placeholder="Edad" name="edad" class="form-control" id="edad">
+      </div>
+  
+      <button class="btn btn-success">Guardar</button>
+    </form>
+  </div>
+  
